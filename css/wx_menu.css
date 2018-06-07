@@ -1,0 +1,190 @@
+/****** 主体内容 ******/
+#wxContainer {
+  width: 100%;
+  height: 100%;
+  min-width: 600px;
+}
+#wxContainer * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#wxContainer .leftnr {
+  width: 30%;
+  height: 100%;
+  float: left;
+  background: #fff;
+  border: 1px solid #ddd;
+  position: relative;
+}
+#wxContainer .leftnr .mobile_body {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  background: #808080;
+}
+#wxContainer .leftnr .mobile_menu {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  background: #F5F5F5;
+  border-top: 1px solid #ddd;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+#wxContainer .leftnr .mobile_menu .menu_button {
+  width: 100%;
+  height: 100%;
+}
+#wxContainer .leftnr .mobile_menu .menu_button > li {
+  width: 100%;
+  display: block;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  border-right: 1px solid #D3EAF7;
+  position: relative;
+  cursor: pointer;
+}
+#wxContainer .leftnr .mobile_menu .menu_button > li:last-child {
+  border-right: none;
+}
+#wxContainer .leftnr .mobile_menu .menu_button > li > span {
+  display: block;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+#wxContainer .leftnr .mobile_menu .menu_button > li > ul {
+  display: none;
+  width: 100%;
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+}
+#wxContainer .leftnr .mobile_menu .menu_button > li > ul > li {
+  display: block;
+  text-align: center;
+  border: 1px solid #D3EAF7;
+  border-bottom: none;
+}
+#wxContainer .leftnr .mobile_menu .menu_button > li > ul > li span {
+  display: block;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+#wxContainer .leftnr .mobile_menu .menu_button > li > ul > li span.check {
+  color: #e4393c;
+}
+#wxContainer .leftnr .mobile_menu .menu_button > li > span.check {
+  border: 1px solid #44b549;
+  color: #44b549;
+}
+#wxContainer .rightnr {
+  width: 68%;
+  height: 100%;
+  float: right;
+  background: #f4f5f9;
+  border: 1px solid #ddd;
+  position: relative;
+  padding: 0 3%;
+}
+#wxContainer .rightnr .title {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e7e7eb;
+}
+#wxContainer .rightnr .title #delete_menu {
+  color: #e4393c;
+  cursor: pointer;
+}
+#wxContainer .rightnr .form_menu .group_menu {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+#wxContainer .rightnr .form_menu .group_menu input {
+  width: 60%;
+  height: 40px;
+  line-height: 40px;
+  margin-left: 2%;
+  background: #fff;
+  text-indent: 1em;
+}
+#wxContainer .rightnr .form_menu .group_menu input:focus {
+  outline: none;
+}
+#wxContainer .rightnr .form_menu .group_menu p {
+  position: absolute;
+  left: 100px;
+  bottom: 0;
+  font-size: 13px;
+}
+#wxContainer .rightnr .form_menu .sub_menu {
+  display: none;
+}
+#wxContainer .rightnr .form_menu .content_menu {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+#wxContainer .rightnr .form_menu .content_menu input[type="radio"] {
+  margin: 0 10px 0 2%;
+}
+#wxContainer .rightnr .form_menu .content_menu_box {
+  width: 100%;
+  min-height: 80px;
+  padding: 1em;
+  background: #fff;
+  border: 1px solid #ddd;
+}
+#wxContainer .rightnr .form_menu .content_menu_box .item {
+  display: none;
+}
+#wxContainer .rightnr .form_menu .content_menu_box .item input {
+  border: 1px solid #ddd;
+  width: 80%;
+  height: 40px;
+  line-height: 40px;
+  text-indent: 1em;
+}
+#wxContainer .rightnr .form_menu .content_menu_box .item input:focus {
+  outline: none;
+}
+#wxContainer .rightnr .form_menu .content_menu_box .current {
+  display: block !important;
+}
+#wxContainer .saveMsg {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #F5F5F5;
+  border-top: 1px solid #ddd;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+#wxContainer .saveMsg #save_btn {
+  color: #fff;
+  font-size: 16px;
+  padding: 0.5em 2em;
+  background: #44b549;
+  border: none;
+  border-radius: 3px;
+}

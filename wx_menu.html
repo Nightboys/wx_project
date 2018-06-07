@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>公众号平台</title>
+    <link rel="stylesheet" href="css/wx_menu.css"/>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/wx_menu.js"></script>
+</head>
+<body>
+
+    <div id="contentBox" style="width:800px;height:500px;margin:0 auto;padding:10px;">
+        <!--
+            <div id="wxContainer">
+                &lt;!&ndash;左侧展示区域&ndash;&gt;
+                <div class="leftnr">
+                    <div class="mobile_body">
+                        公众号平台
+                    </div>
+                    <div class="mobile_menu">
+                        <ul class="menu_button">
+                            <li class="main_menu">
+                                <span>菜单一</span>
+                                <ul>
+                                    &lt;!&ndash;<li><span>子菜单一</span></li>&ndash;&gt;
+                                    <li class="add_child_btn">+</li>
+                                </ul>
+                            </li>
+                            <li id="add_btn">+</li>
+                        </ul>
+                    </div>
+                </div>
+                &lt;!&ndash;右侧编辑区域&ndash;&gt;
+                <div class="rightnr">
+                    <div class="title">
+                        <span>菜单名称</span>
+                        <span id="delete_menu">删除菜单</span>
+                    </div>
+
+                    <div class="form_menu">
+                        <div class="group_menu">
+                            菜单名称 <input type="text" value="菜单名称" maxlength="4"/>
+                            <p>字数不超过4个汉字或8个字母</p>
+                        </div>
+
+                        <div class="sub_menu">
+                            <div class="content_menu">
+                                菜单内容
+                                <input type="radio" name="content" checked="checked"/>跳转网页
+                                <input type="radio" name="content"/>跳转小程序
+                            </div>
+
+                            <div class="content_menu_box">
+                                <div class="item current">
+                                    页面地址 <input type="url"/>
+                                </div>
+                                <div class="item">
+                                    小程序
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="saveMsg"><button id="save_btn">保存并发布</button></div>
+                </div>
+            </div>
+        -->
+    </div>
+
+    <script>
+        var wx = new WxMenu({
+            mainBtnCount : 3,   //主菜单个数
+            subBtnCount : 5,    //子菜单个数
+            contain : "#contentBox",    //最外围父元素对象
+            dataSource : "www.baidu.com",    //接口访问路径
+            dataSubmit : "www.baidu.com"     //数据提交路径
+        });
+        wx.initOrder();
+    </script>
+
+</body>
+</html>

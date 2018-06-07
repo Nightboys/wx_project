@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>公众号平台</title>
+    <link rel="stylesheet" href="css/wx_menu.css"/>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/version1.js"></script>
+</head>
+<body>
+
+   <div id="contentBox" style="width:800px;height:500px;margin:0 auto;padding:10px;">
+       <div id="wxContainer">
+           <!--左侧展示区域-->
+           <div class="leftnr">
+               <div class="mobile_body">
+                   公众号平台
+               </div>
+               <div class="mobile_menu">
+                   <ul class="menu_button">
+                       <li class="main_menu">
+                           <span>菜单一</span>
+                           <ul>
+                               <!--<li><span>子菜单一</span></li>-->
+                               <li class="add_child_btn">+</li>
+                           </ul>
+                       </li>
+                       <li id="add_btn">+</li>
+                   </ul>
+               </div>
+           </div>
+           <!--右侧编辑区域-->
+           <div class="rightnr">
+               <div class="title">
+                   <span>菜单名称</span>
+                   <span id="delete_menu">删除菜单</span>
+               </div>
+
+               <div class="form_menu">
+                   <div class="group_menu">
+                       菜单名称 <input type="text" value="菜单名称" maxlength="4"/>
+                       <p>字数不超过4个汉字或8个字母</p>
+                   </div>
+
+                   <div class="sub_menu">
+                       <div class="content_menu">
+                           菜单内容
+                           <input type="radio" name="content" checked="checked"/>跳转网页
+                           <input type="radio" name="content"/>跳转小程序
+                       </div>
+
+                       <div class="content_menu_box">
+                           <div class="item current">
+                               页面地址 <input type="url"/>
+                           </div>
+                           <div class="item">
+                               小程序
+                           </div>
+                       </div>
+                   </div>
+               </div>
+
+               <div class="saveMsg"><button id="save_btn">保存并发布</button></div>
+           </div>
+       </div>
+   </div>
+
+</body>
+</html>
